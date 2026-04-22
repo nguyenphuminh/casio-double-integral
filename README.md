@@ -22,7 +22,7 @@ First, insert 0 into A1, 1 into A2. Then, go to cell C1, press `TOOLS > Fill For
 
 ## Solving integrals with implicit bounds
 
-But you might notice that this only works for explicit rectangle, type 1, and type 2 bounds. To extend further to implicit bounds, we need to use conditional expressions in Casio. From [nguyenphuminh/casio-coding](./https://github.com/nguyenphuminh/casio-coding), we have the formulas:
+But you might notice that this only works for explicit rectangle, type 1, and type 2 bounds. To extend further to implicit bounds, we need to use conditional expressions in Casio. From [nguyenphuminh/casio-coding](https://github.com/nguyenphuminh/casio-coding), we have the formulas:
 
 * `Int((tanh(A-B)+2)/2)` would return 1 if `A >= B`, 0 otherwise.
 * `Int(1-|tanh(A-B)|)` would return 1 if `A = B`, 0 otherwise.
