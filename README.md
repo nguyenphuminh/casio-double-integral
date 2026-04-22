@@ -29,7 +29,7 @@ But you might notice that this only works for explicit rectangle, type 1, and ty
 
 Example:
 
-$$\iint_{D} x + y dx dy, \quad \text{where } D: \begin{cases} x, y \geq 0 \\ x + y \leq 1 \end{cases}$$
+$$\iint_{D} (x + y) dx dy, \quad \text{where } D: \begin{cases} x, y \geq 0 \\ x + y \leq 1 \end{cases}$$
 
 We know that x and y can only be between 0 and 1, so first the outer bounds are 0 and 1, then, we structure the inner integral formula like this to ensure the Riemann sum only includes satisfying slices:
 
