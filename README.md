@@ -31,13 +31,13 @@ Example:
 
 $$\iint_{D} (x + y) dx dy, \quad \text{where } D: \begin{cases} x, y \geq 0 \\ x + y \leq 1 \end{cases}$$
 
-We know that x and y can only be between 0 and 1, so first the outer bounds are 0 and 1, then, we structure the inner integral formula like this to ensure the Riemann sum only includes satisfying slices:
+We know that x and y can only be between 0 and 1, so first, the outer bounds are 0 and 1, then, we structure the inner integral formula like this to ensure the Riemann sum only includes satisfying slices:
 
 ```
 Form = ∫((B1+x)*Int((tanh(1-x-y)+2)/2),0,1)
 ```
 
-Although, do note that these conditional expressions are extremely costly/slow so always resolve your bounds first if possible.
+However, do note that these conditional expressions are extremely costly/slow so always resolve your bounds first if possible.
 
 ## Also check out
 
