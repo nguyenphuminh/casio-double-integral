@@ -16,7 +16,7 @@ Go to cell D1, press `TOOLS > Fill Formula`, set `Form = SUM(C1:C10)*$A$3`. This
 
 Now that we have this template, let's try with this integral:
 
-$$\int_{0}^{1} \int_{x}^{x^2+1} (x + y) \, dy \, dx$$
+$$\int_{0}^{1} \int_{x}^{x^2+1} (x + y) dy dx$$
 
 First, insert 0 into A1, 1 into A2. Then, go to cell C1, press `TOOLS > Fill Formula`, set `Form = ∫(B1+x,B1,B1^2+1)`, set `Range: C1:C10`. Wait a bit, and the result will be in D1, which is `1.816`, pretty close to the actual result, which is `71/60`.
 
@@ -29,7 +29,7 @@ But you might notice that this only works for explicit rectangle, type 1, and ty
 
 Example:
 
-$$\iint_{D} x + y \, dx \, dy, \quad \text{where } D: \begin{cases} x, y \geq 0 \\ x + y \leq 1 \end{cases}$$
+$$\iint_{D} x + y dx dy, \quad \text{where } D: \begin{cases} x, y \geq 0 \\ x + y \leq 1 \end{cases}$$
 
 We know that x and y can only be between 0 and 1, so first the outer bounds are 0 and 1, then, we structure the inner integral formula like this to ensure the Riemann sum only includes satisfying slices:
 
